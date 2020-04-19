@@ -106,3 +106,34 @@ Lessons
 - at CurrencyRow
   1. extract the prop
   2. set the value to HTML element with the prop
+
+<br/>
+
+### Hook onChange Event for each Selectors
+
+- pass `onChangeCurrency` function from App.js to CurrencyRow.js component
+
+- ```javascript
+  onChangeCurrency={(e) => setFromCurrency(e.target.value)}
+  ```
+
+- an inline function that returns e
+
+<br/>
+
+### Declare States for Changes in Input
+
+- 3 states
+
+  1. amount
+     - how much of the input is changed
+  2. amountInFromCurrency
+     - whether the In or From input box has been changed
+  3. exchangeRate
+     - used to calculate the currency
+
+- amountInFromCurrency === true
+
+  - fromCurrency has been modified
+
+- pass down `amount`
