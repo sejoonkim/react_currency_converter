@@ -43,6 +43,14 @@ function App() {
     setAmountInFromCurrency(false);
   }
 
+  useEffect(() => {
+    if (fromCurrency !== undefined && toCurrency !== undefined) {
+      fetch(`${BASE_URL}?base=${fromCurrency}&symbols=${toCurrency}`)
+        .then((res) => res.json())
+        .then((data) => setExchangeRate(data.rates[toCurrency]));
+    }
+  }, [fromCurrency, toCurrency]);
+
   return (
     <>
       <h1>Convert</h1>

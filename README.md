@@ -1,5 +1,9 @@
 ## Currency Converter with React
 
+![alt](./gif/react_currency_converter.gif)
+
+<br/>
+
 Lessons
 
 - Props
@@ -148,3 +152,25 @@ Lessons
   - create 2 handlers
     1. From Currency
     2. To Currency
+
+<br/>
+
+### Allow Change Currency
+
+- `useEffect`
+
+  - ```javascript
+    useEffect(() => {}, [fromCurrency, toCurrency]);
+    ```
+
+  - whenever `fromCurrency` array or `toCurrency` array changes
+
+  - run the code inside the function
+
+- > Unhandled Rejection (TypeError): Cannot read property 'undefined' of undefined
+
+  - since `useEffect` is called when `fromCurrency` and `toCurrency` are`undefined`
+
+- ```javascript
+  if (fromCurrency !== Object.null && toCurrency !== Object.null)
+  ```
