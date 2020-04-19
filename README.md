@@ -33,3 +33,15 @@ Lessons
   - `rfc` snippet
 - modify HTML to include CurrencyRow component
 - write basic UI
+
+<br/>
+
+### Styling
+
+- `display: flex`
+  - line everything up in the center
+- `min-height: 100vh;`
+
+  - align vertically
+
+- create classNames and perform styling
