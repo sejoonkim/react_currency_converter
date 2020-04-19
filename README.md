@@ -77,3 +77,19 @@ Lessons
     - `currencyOptions` will now have `data.rates`
 
 - pass `currencyOptions` as a prop
+
+<br/>
+
+### Handle Props in CurrencyRow Component
+
+- destructure the props
+
+  - ```javascript
+    const { currencyOptions } = props;
+    ```
+
+- > Each child in a list should have a unique "key" prop.
+
+  - ```javascript
+    <option value={option}>{option}</option>
+    ```
