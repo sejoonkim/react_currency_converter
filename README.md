@@ -93,3 +93,16 @@ Lessons
   - ```javascript
     <option value={option}>{option}</option>
     ```
+
+<br/>
+
+### Create State for Default Currency
+
+- create states
+  1. fromCurrency
+  2. toCurrency
+- allocate the base currency and the first currency to the state
+- pass as props to CurrencyRow Component
+- at CurrencyRow
+  1. extract the prop
+  2. set the value to HTML element with the prop
