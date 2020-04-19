@@ -23,3 +23,13 @@ Lessons
   - modify HTML code
 - `npm start`
   - to check if initialized
+
+<br/>
+
+### Create Single Component
+
+- CurrencyRow.js
+  - ES7 React/Redux/React-Native/JS snippets
+  - `rfc` snippet
+- modify HTML to include CurrencyRow component
+- write basic UI
