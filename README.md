@@ -45,3 +45,35 @@ Lessons
   - align vertically
 
 - create classNames and perform styling
+
+<br/>
+
+### Currency API
+
+- http://exchangeratesapi.io/
+
+- `useEffect`
+  - to fetch the latest currency information
+- console.log the .json returned
+
+<br/>
+
+### Use Props for Passing Currency Information
+
+- setup **state** for application
+
+  - `useState`
+
+    - state for currency list
+
+    - ```javascript
+      const [currencyOptions, setCurrencyOptions] = useState([]);
+
+      .then((data) => {
+              setCurrencyOptions([data.base, ...Object.keys(data.rates)]);
+            });
+      ```
+
+    - `currencyOptions` will now have `data.rates`
+
+- pass `currencyOptions` as a prop
