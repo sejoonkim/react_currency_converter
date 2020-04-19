@@ -137,3 +137,14 @@ Lessons
   - fromCurrency has been modified
 
 - pass down `amount`
+
+<br/>
+
+### Apply Changes to Each Input Boxes
+
+- CurrencyRow.js
+  - add a new `onChange` event at `<input>`
+- App.js
+  - create 2 handlers
+    1. From Currency
+    2. To Currency
